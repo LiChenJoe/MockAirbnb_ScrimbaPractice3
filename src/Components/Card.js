@@ -1,21 +1,24 @@
 import React from "react";
-import Katie from "../images/katie-zaferes.png";
 import star from "../images/star.png";
 
-export default function Card() {
+export default function Card({ Img, Rate, People, Country, Title, Price }) {
   return (
-    <section className="card">
-      <img src={Katie} className="card--image" alt="Katie Zaferes" />
+    <div className="card">
+      <img
+        src={`../images/${Img}`}
+        className="card--image"
+        alt="Katie Zaferes"
+      />
       <div className="card--stats">
         <img src={star} className="card--star" alt="star for rating" />
-        <span>5.0</span>
-        <span className="gray">(6) • </span>
-        <span className="gray">USA</span>
+        <span>{Rate}</span>
+        <span className="gray">({People}) • </span>
+        <span className="gray">{Country}</span>
       </div>
-      <p>Life Lessons with Katie Zaferes</p>
+      <p>{Title}</p>
       <p>
-        <span className="bold">From $136</span> / person
+        <span className="bold">From ${Price}</span> / person
       </p>
-    </section>
+    </div>
   );
 }

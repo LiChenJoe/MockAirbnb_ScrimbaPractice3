@@ -72,18 +72,29 @@ section {
   }
 }
 
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
 .card {
-  &.card--image {
+  display: inline-block;
+  width: 176px;
+  height: 235px;
+  border-radius: 9px;
+  background-color: #fff;
+
+  & .card--image {
     width: 100%;
     border-radius: 9px;
   }
 
-  &.card--stats {
+  & .card--stats {
     display: flex;
     align-items: center;
   }
 
-  &.card--star {
+  & .card--star {
     height: 14px;
   }
 }
