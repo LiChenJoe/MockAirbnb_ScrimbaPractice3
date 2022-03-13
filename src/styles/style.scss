@@ -25,6 +25,7 @@ body {
   left: 0;
   right: 0;
   margin: auto;
+  overflow: hidden;
 }
 
 nav {
@@ -50,11 +51,11 @@ section {
   flex-direction: column;
   line-height: 110%;
 
-  & #heto-image {
+  & #hero--image {
     width: 395.91px;
     height: 232px;
     align-self: center;
-    margin: 26px 0 32px -26px;
+    margin: 26px 0 32px -36px;
   }
 
   & h1 {
@@ -75,6 +76,7 @@ section {
 .list {
   display: flex;
   flex-direction: row;
+  padding-left: 37px;
 }
 
 .card {
@@ -83,10 +85,22 @@ section {
   height: 235px;
   border-radius: 9px;
   background-color: #fff;
+  margin-right: 18px;
+  flex-shrink: 0;
+  font-size: 12px;
+  position: relative;
 
   & .card--image {
     width: 100%;
     border-radius: 9px;
+  }
+
+  .SoldOut {
+    position: absolute;
+    top: 0;
+    margin: 10px;
+    background-color: #ffffff;
+    padding: 5px;
   }
 
   & .card--stats {
@@ -96,5 +110,15 @@ section {
 
   & .card--star {
     height: 14px;
+  }
+
+  & .gray {
+    color: #918e9b;
+    line-height: 18px;
+  }
+
+  & .title {
+    color: #222222;
+    font-weight: 300;
   }
 }
