@@ -10,17 +10,9 @@ export default function App() {
       <NavBar />
       <Hero />
       <div className="list">
-      {data.map(item=>
-         <Card 
-         Key={item.id}
-         SoldOut= {item.openSpots}
-         CoverImg={item.coverImg} 
-         Rate={item.stats.rating}
-         People={item.stats.reviewCount}
-         Location={item.location}
-         Title={item.title}
-         Price={item.price}
-         />)}
+        {data.map((item) => (
+          <Card key={item.id} item={item} />
+        ))}
       </div>
     </div>
   );

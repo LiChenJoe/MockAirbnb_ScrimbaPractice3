@@ -95,12 +95,13 @@ section {
     border-radius: 9px;
   }
 
-  .SoldOut {
+  .bedgeText {
     position: absolute;
     top: 0;
     margin: 10px;
     background-color: #ffffff;
     padding: 5px;
+    border-radius: 2px;
   }
 
   & .card--stats {
@@ -115,6 +116,12 @@ section {
   & .gray {
     color: #918e9b;
     line-height: 18px;
+  }
+
+  & .grey,
+  .rating {
+    margin-right: 2.5px;
+    margin-left: 2.5px;
   }
 
   & .title {
